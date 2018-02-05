@@ -1,0 +1,80 @@
+//配置用户名
+git config --global user.name "xxx"
+//配置用户邮箱
+git config --global user.emaill "xxx"
+//配置编辑器
+git config --global core.editor emacs
+//Windows x86
+git config --global core.editor "'../notepad++.exe' -multiInst -nosession"
+//Windows x64
+git config --global core.editor "'../notepad++.exe' -multiInst"
+//查看个人设置
+git config --list
+//查看具体设置
+git config user.name
+//获取帮助
+git help <verb>
+git <verb> --help
+man git-<verb>
+//获取config命令帮助
+git help config
+//初始化仓库
+git init
+//clone仓库
+git clone http://xxx.xxx.xx.git
+//查看状态
+git status
+//添加到版本控制
+git add
+//提交
+git commit
+//查看gengg
+git diff
+//忽略文件
+cat .gitignore
+*.[oa]
+*~
+//移除文件
+git rm xxx.xx
+//移动文件
+git mv file_from file_to
+//查看提交历史
+git log
+//撤销操作
+git commit -amend
+//撤销已暂存的文件
+git reset HEAD xxx.xx
+//撤销对文件的修改
+git checkout -- xxx.xx
+//查看已设置的远程仓库
+git remote
+git remote -v
+//添加远程仓库
+git remote add [shortname] [url]
+//从远程仓库获取和拉取数据
+git fetch [remote-name]
+//将数据推送到远程仓库
+git push origin master
+//检查远程仓库
+git remote show origin
+//重命名远程仓库
+git remote rename old-name new-name
+git remote
+//删除远程仓库
+git remote rm [name]
+git remote
+//列举标签
+git tag
+git tag -l "v1.8.5*"
+//创建注释标签
+git tag -a v1.4 -m "my version 1.4"
+//创建轻量标签
+git tag v1.4-lw
+git tag
+//补加标签
+git tag -a v1.2 [xxxx(校验/部分校验)]
+//共享标签,git push 命令不会把标签推送到远程服务器
+git push origin [tagname]
+//多个标签一次推送到服务器
+git push origin --tags
+
